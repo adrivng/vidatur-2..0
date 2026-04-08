@@ -15,13 +15,14 @@ function asset($path) {
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Vidatur</title>
 
-<link rel="stylesheet" href="<?php echo asset('stylesheets/style.css'); ?>">
-<link rel="stylesheet" href="<?php echo asset('css/menu.css'); ?>">
-<link rel="stylesheet" href="<?php echo asset('css/estilos.css'); ?>">
+<!-- CSS Files -->
+<link rel="stylesheet" href="<?php echo asset('assets/stylesheets/style.css'); ?>">
+<link rel="stylesheet" href="<?php echo asset('assets/css/menu.css'); ?>">
+<link rel="stylesheet" href="<?php echo asset('assets/css/estilos.css'); ?>">
 <link rel="stylesheet" href="<?php echo asset('style.css'); ?>">
-<link rel="stylesheet" href="<?php echo asset('stylesheets/skins/blue.css'); ?>">
-<link rel="stylesheet" href="<?php echo asset('stylesheets/responsive.css'); ?>">
-<link rel="shortcut icon" href="<?php echo asset('images/icono.ico'); ?>" type="image/x-icon" />
+<link rel="stylesheet" href="<?php echo asset('assets/stylesheets/skins/blue.css'); ?>">
+<link rel="stylesheet" href="<?php echo asset('assets/stylesheets/responsive.css'); ?>">
+<link rel="shortcut icon" href="<?php echo asset('assets/images/icono.ico'); ?>" type="image/x-icon" />
 
 <style>
     .grid-container {
@@ -169,7 +170,7 @@ function asset($path) {
         <br/>
         <div class="logo">
             <a href="<?php echo asset('index.php'); ?>">
-                <img src="<?php echo asset('images/logo.png'); ?>" width="250px" alt="Vidatur">
+                <img src="<?php echo asset('assets/images/logo.png'); ?>" width="250px" alt="Vidatur">
             </a>
         </div>
     </div>
@@ -191,12 +192,12 @@ function asset($path) {
         <div style="float: right; margin-top: 12px; display: flex; gap: 8px;">
             <?php if ($lang === 'en'): ?>
                 <a href="?lang=es" class="lang-btn" style="display: flex; align-items: center; gap: 5px;">
-                    <img src="<?php echo asset('images/peru.png'); ?>" style="width: 20px; height: 15px;">
+                    <img src="<?php echo asset('assets/images/peru.png'); ?>" style="width: 20px; height: 15px;">
                     <span>Español</span>
                 </a>
             <?php else: ?>
                 <a href="?lang=en" class="lang-btn" style="display: flex; align-items: center; gap: 5px;">
-                    <img src="<?php echo asset('images/usa.png'); ?>" style="width: 20px; height: 15px;">
+                    <img src="<?php echo asset('assets/images/usa.png'); ?>" style="width: 20px; height: 15px;">
                     <span>English</span>
                 </a>
             <?php endif; ?>
