@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+
+<meta charset="utf-8"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width"/>
+<title>Vidatur</title>
+<!-- CSS Files-->
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylesheets/skins/blue.css">
+<!-- skin color -->
+<link rel="stylesheet" href="stylesheets/responsive.css">
+<link rel="shortcut icon" href="images/icono.ico" type="image/x-icon" />
+</head>
+
+<!-- Facebook Pixel Code 
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '297053345038992'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=297053345038992&ev=PageView
+&noscript=1"/>
+</noscript>
+ End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '318132699577711');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=318132699577711&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<style type="text/css">
+		
+	.boton{
+	      text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+				text-align:center;
+				text-decoration: none;
+	      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	      display:inline-block;
+				color: #FFF;
+				background: #7F8C8D;
+				padding: 7px 20px;
+				white-space: nowrap;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 100px;
+				margin: 10px 5px;
+				-webkit-transition: all 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+	}
+	   
+	.verde{
+	  background: #ffffff;
+	  box-shadow: 0px 5px 0px 0px #24523c;
+	}
+
+	.verde:hover{
+		backgsround: #c4dfcf;
+	}
+
+	.verde:active{
+	  box-shadow: 0px 2px 0px 0px #27AE60;
+	}
+
+.modalContainer {
+			display: none; 
+			position: fixed; 
+			z-index: 4;
+			padding-top: 100px;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%; 
+			overflow: auto; 
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.4);
+		}
+
+		.modalContainer .modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 0px solid lightgray;
+			border-top: 10px solid #007951;
+			width: 60%;
+		}
+
+		.modalContainer .close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.modalContainer .close:hover,
+		.modalContainer .close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+</style>
+<body>
+<!-- HIDDEN PANEL 
+================================================== -->
+<!-- HEADER
+================================================== -->
+<div class="row">
+	<div class="headerlogo four columns">
+		<br/>
+		<div class="logo">
+			<a href="index.html">
+				<img src="images/logo.png" width="250px">
+			</a>
+		</div>
+	</div>
+	<div class="headermenu eight columns noleftmarg">
+		<nav id="nav-wrap">
+		<ul id="main-menu" class="nav-bar sf-menu">
+			<li class="current">
+				<a href="index.html"><strong>INICIO</strong></a>
+			</li>
+			<li>
+				<a href="nacional.html"><strong>NACIONAL</strong></a>
+			</li>
+			<li>
+				<a href="internacional.html"><strong>INTERNACIONAL</strong></a>
+			</li>
+			<li>
+				<a href="promociones.html"><strong>PROMOCIÓN</strong></a>
+			</li>
+			<li>
+				<a href="nosotros.html"><strong>NOSOTROS</strong></a>
+			</li>
+			<li>
+				<a href="contacto.html"><strong>CONTACTOS</strong></a>
+			</li>
+		</ul>
+		</nav>
+	</div>
+</div>
+<div class="clear">
+</div>
+<!-- SLIDER 
+================================================== -->
+<div class="row" style="display: flex;">
+
+
+	<div class="six columns ">
+		<center>
+			<p>
+				<strong> <h5> Para ir al cotizador online, hacer clic aquí: </h5></strong>
+				<a href="vidatur_online_formulario.html" class="boton verde">
+					<strong>
+						<h3 style="color: white;"><img src="images/cotizador_online_logo.png" width="170"></h3>
+					</strong>
+				</a>
+			</p>
+			<a href="vidatur_online_formulario.html"><strong><p style="color: blue; text-decoration: underline; margin-top: 0px;">Registro para Cotizador.</p></strong></a>
+		</center>
+	</div>
+
+
+
+	
+		<div class="six columns ">
+			<center>
+				<p>
+					<strong> <h5>Beneficios para agencias GEA:</h5></strong>
+					<br>
+					<a href="beneficios_agencias_gea.html" class="boton verde">
+						<strong>
+							<h3 style="color: white;"><img src="images/logo_beneficios_agencias_gea.png" width="50"></h3>
+						</strong>
+					</a>
+				</p>
+			</center>
+
+		</div>
+	
+
+
+	<div class="six columns ">
+		<center>
+			<p>
+				<strong> <h5> Programa De Recompensa Vidatur: </h5></strong>
+				<a href="programa_de_recompensa.html" class="boton verde">
+					<strong>
+						<h3 style="color: white;"><img src="images/logo-programa-recompensa.png" width="180"></h3>
+					</strong>
+				</a>
+			</p>
+		</center>
+
+	</div>
+</div>
+
+<div id="ei-slider" class="ei-slider" style="z-index: 3;">
+	<ul class="ei-slider-large">
+		<!--
+	<li>
+		<a href="https://vidatur.net/convencion_vidatur_2024.html"> <img src="images/banner_promocion_1_8.jpg" alt="image02" class="responsiveslide"></a>
+
+		</li>
+			-->
+		<li>
+			<a href="javascript:void(0);"> <img src="images/banner_promocion_2_7.jpg" alt="image02" class="responsiveslide"></a>
+		</li>
+		<li>
+			<a href="javascript:void(0);"> <img src="images/banner_promocion_3_7.jpg" alt="image02" class="responsiveslide"></a>
+		</li>
+	</ul>
+	<!-- slider-thumbs -->
+	<ul class="ei-slider-thumbs">
+		<li class="ei-slider-element">Current</li>
+		<!--	<li><a href="https://vidatur.net/convencion_vidatur_2024.html">Slide 1<img src="images/banner_promocion_1_8.jpg" class="slideshowthumb" alt="thumb02" /></a></li>-->
+		<li><a href="#">Slide 2</a><img src="images/banner_promocion_2_7.jpg" class="slideshowthumb" alt="thumb02" /></li>
+		<li><a href="#">Slide 3</a><img src="images/banner_promocion_3_7.jpg" class="slideshowthumb" alt="thumb02" /></li>
+	</ul>
+</div>
+
+<br>
+<br>
+<br>
+
+<br>
+
+
+<!-- PROMOS 
+================================================== -->
+<div class="row">
+	<div id="portofolio">
+
+
+
+
+		<div class="four columns threeportofolio category todos nacional bloqueos">
+			<a href="../../promocion/fiestas_patrias_iquitos_heliconia_servicios_2024.html">
+				<div class="portofoliothumb">
+					<img src="../../promocion/img/pr_fiestas_patrias_iquitos_heliconia_servicios_2024.jpg" class="threeimage" alt="" />
+				</div>
+			</a>
+			<h5 style="color: #357d5c"><center>Fiestas Patrias Iquitos 2024</center></h5>
+			<h5><center style="color: #f68a2c; font-size: 13px;"><big><big>Viaja del 26 jul.2024 al 31 jul.2024</big></big></center></h5>
+			<h5> <center>Para comprar hasta 25 jul.2024.</center></h5>
+			<h5 style="color: #FFFFFF"><center><big><big><big>PROMOCION</big></big></big></center></h5>
+		</div>
+
+
+		<div class="four columns threeportofolio category todos centro sur bloqueos">
+			<a href="../../promocion/bloqueo_grupos_escolares_octubre_2024.html">
+				<div class="portofoliothumb">
+					<img src="../../promocion/img/pr_bloqueo_grupos_escolares_octubre_2024_4.jpg" class="threeimage" alt="" />
+				</div>
+			</a>
+			<h5 style="color: #357d5c"><center>Bloqueo Grupos escolares 2024</center></h5>
+			<h5><center style="color: #f68a2c; font-size: 13px;"><big><big>Viaja del 21 oct.2024 al 24 oct.2024</big></big></center></h5>
+			<h5> <center>Para comprar hasta agotar Stock</center></h5>
+			<h5 style="color: #FFFFFF"><center><big><big><big>PROMOCION</big></big></big></center></h5>
+		</div>
+
+
+
+		<div class="four columns threeportofolio category todos centro sur bloqueos">
+			<a href="../../promocion/fiestas_patrias_2024.html">
+				<div class="portofoliothumb">
+					<img src="../../promocion/img/pr_fiestas_patrias_2024_11.jpg" class="threeimage" alt="" />
+				</div>
+			</a>
+			<h5 style="color: #357d5c"><center>Fiestas Patrias 2024</center></h5>
+			<h5><center style="color: #f68a2c; font-size: 13px;"><big><big>Viaja del 26 jul.2024 al 30 jul.2024</big></big></center></h5>
+			<h5> <center>Para comprar  hasta 8 jun.2024.</center></h5>
+			<h5 style="color: #FFFFFF"><center><big><big><big>PROMOCION</big></big></big></center></h5>
+		</div>
+
+
+
+
+
+
+	</div>
+	</div>
+
+	<!--
+		<button id="btnModal" style="background: transparent; border: none !important; font-size: 0;">Abrir modal</button>
+		<div id="tvesModal" class="modalContainer">
+			<div class="modal-content">
+				<span class="close">×</span>
+				<img src="images/vende_y_gana.jpg" width="100%" height="auto">
+			</div>
+		</div>
+	<div class="hr">
+	</div>
+	-->
+		<div class="social">
+			<a href="../../videos_vidatur.html"><img src="../promocion/img/ICONOVIDEOS.png" alt="Videos Vidatur" title="Videos Vidatur"></a>
+			<a href="https://www.facebook.com/vidatur.pe"><img src="../promocion/img/FACEBOOK.png" alt="FACEBOOK" title="Facebook"></a>
+			<a href="https://www.instagram.com/vidaturperu/"><img src="../promocion/img/INSTAGRAM.png" alt="Instagram" title="Instagram"></a>
+		</div>
+
+		<!-- FOOOTER
+	================================================== -->
+		<div id="footer">
+			<footer class="row">
+				<p class="back-top floatright">
+					<a href="#top"><span></span></a>
+				</p>
+				<div class="four columns">
+					<h1>Lima</h1>
+					Av. José Larco 930, Miraflores 15074<br>
+					<big><b>Telefono:</b></big><b>(01) 7550071</b><br>
+					<b>Celular: 981-183-450 </b><br>
+					<b>Celular: 934-794-807 </b><br>
+					<b>Emergencias: 977-912-165 </b><br>
+					<a href="#"><b>reservas@vidatur.net</b></a><br>
+					<a href="#"><b>reservas3@vidatur.net</b></a><br>
+					<a href="#"><b>reservas7@vidatur.net</b></a><br><br>
+				</div>
+				<div class="four columns">
+				</div>
+				<div class="four columns">
+					<div style="display: flex; flex-direction: row; align-items: center;  justify-content: center;">
+						<img style="width: 40px; height: 20px" src="https://primesoft-rlatorre-backup-bucket-1.s3.amazonaws.com/ldr/icon-libro-reclamaciones_negro.png">
+						<a style="font-weight:700" href="javascript:openLdr('vidatur_ope1', '22b16dca854d5ebbe10a6fb8a8a4d56a')">
+							Libro de Reclamaciones
+						</a>
+					</div><br>
+					<a href="politicas_privacidad.html"><b>Politicas de Privacidad</b></a><br>
+					<a href="terminos_condiciones.html"><b>Terminos y Condiciones</b></a><br>
+				</div>
+				<hr>
+			</footer>
+		</div>
+		<div class="copyright">
+			<div class="row">
+				<div class="six columns">
+					&copy;<span class="small"> Copyright Vidatur</span>
+				</div>
+			</div>
+		</div>
+		<!-- JAVASCRIPTS
+	================================================== -->
+		<!-- Javascript files placed here for faster loading -->
+		<script src="javascripts/foundation.min.js"></script>
+		<script src="javascripts/jquery.easing.1.3.js"></script>
+		<script src="javascripts/elasticslideshow.js"></script>
+		<script src="javascripts/jquery.carouFredSel-6.0.5-packed.js"></script>
+		<script src="javascripts/jquery.cycle.js"></script>
+		<script src="javascripts/app.js"></script>
+		<script src="javascripts/modernizr.foundation.js"></script>
+		<script src="javascripts/slidepanel.js"></script>
+		<script src="javascripts/scrolltotop.js"></script>
+		<script src="javascripts/hoverIntent.js"></script>
+		<script src="javascripts/superfish.js"></script>
+		<script src="javascripts/responsivemenu.js"></script>
+		<script src="javascripts/jquery.tweet.js"></script>
+		<script src="javascripts/jquery.isotope.min.js"></script>
+		<script src="javascripts/jquery.prettyPhoto.js"></script>
+		<script src="javascripts/custom.js"></script>
+
+		<!--Start of Tawk.to Script-->
+		<script type="text/javascript">
+			var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+			(function () {
+				var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+				s1.async = true;
+				s1.src = 'https://embed.tawk.to/5898c0809bfea509f7d93ef6/default';
+				s1.charset = 'UTF-8';
+				s1.setAttribute('crossorigin', '*');
+				s0.parentNode.insertBefore(s1, s0);
+			})();
+
+			if (document.getElementById("btnModal")) {
+				var modal = document.getElementById("tvesModal");
+				var btn = document.getElementById("btnModal");
+				var span = document.getElementsByClassName("close")[0];
+				var body = document.getElementsByTagName("body")[0];
+
+				btn.onclick = function () {
+					modal.style.display = "block";
+					body.style.position = "static";
+					body.style.height = "100%";
+					body.style.overflow = "hidden";
+				}
+
+				span.onclick = function () {
+					modal.style.display = "none";
+					body.style.position = "inherit";
+					body.style.height = "auto";
+					body.style.overflow = "visible";
+				}
+
+				window.onclick = function (event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+						body.style.position = "inherit";
+						body.style.height = "auto";
+						body.style.overflow = "visible";
+					}
+				}
+			}
+
+			$(document).ready(function () {
+				var modal = document.getElementById("tvesModal");
+				var body = document.getElementsByTagName("body")[0];
+				modal.style.display = "block";
+				body.style.position = "static";
+				body.style.height = "100%";
+				body.style.overflow = "hidden";
+			});
+
+		</script>
+		<!--End of Tawk.to Script-->
+
+		<style type="text/css">
+			.container {
+				width: 95%;
+				max-width: 900px;
+				padding: 32px 64px;
+				margin: auto;
+			}
+
+			.social {
+				/*las imágenes usadas tienen width de 48px*/
+				width: 48px;
+				position: fixed;
+				top: 50px;
+				right: 0;
+				z-index: 100;
+			}
+
+			/* Extra centrado vertical*/
+
+			.social {
+				/*border:1px solid #000;*/
+				top: 50%;
+				height: 205px;
+				/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+				margin-top: -100px;
+			}
+		</style>
+
+
+
+</body>
+</html>
+
+<!--Start of librodereclamaciones.com.pe Script-->
+<script type="text/javascript">
+function openLdr(usuario, token){
+var form = document.createElement("form");
+form.setAttribute("method", "post");
+form.setAttribute("action", "https://librodereclamaciones.com.pe/ingresar.php");
+form.setAttribute("target", "view");
+var hiddenField1 = document.createElement("input");
+hiddenField1.setAttribute("type", "hidden");
+hiddenField1.setAttribute("name", "usuario");
+hiddenField1.setAttribute("value", usuario);
+ 
+var hiddenField2 = document.createElement("input");
+hiddenField2.setAttribute("type", "hidden");
+hiddenField2.setAttribute("name", "token");
+hiddenField2.setAttribute("value", token);
+form.appendChild(hiddenField1);
+form.appendChild(hiddenField2);
+document.body.appendChild(form);
+window.open('', 'view');
+form.submit();
+}
+
+
+var links = [
+  'http://vidatur.net/promocion/img/mail_promo_circuitos_colombia_2022_2.jpg',
+  'http://vidatur.net/promocion/img/mail_promo_circuitos_colombia_2022_1.jpg',
+];
+
+function downloadAll(links) {
+  var link = document.createElement('a');
+
+  link.setAttribute('download', 'Programas');
+  link.style.display = 'none';
+
+  document.body.appendChild(link);
+
+  for (var i = 0; i < links.length; i++) {
+    link.setAttribute('href', links[i]);
+    link.click();
+  }
+
+  document.body.removeChild(link);
+}
+
+</script>
+<!--End of librodereclamaciones.com.pe Script-->

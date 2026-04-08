@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.promocion {
+	text-align: center;
+	color: #DD8A2E;
+	font-size: 40px;
+	font-family: roboto;
+	text-decoration:none;
+}
+
+a.b{
+	text-align: center;
+	color: #DD8A2E;
+	font-size: 40px;
+	font-family: roboto;
+	text-decoration:none; 
+}
+a.b hover{
+	text-align: center;
+	color: #DD8A2E;
+	font-size: 40px;
+	font-family: roboto;
+	text-decoration:none; 
+}
+.promocion :hover{
+	text-align: center;
+	color: #DD8A2E;
+	font-size: 40px;
+	font-family: roboto;
+	text-decoration:none;
+}
+
+/*Social*/
